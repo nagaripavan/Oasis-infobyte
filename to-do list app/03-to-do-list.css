@@ -1,0 +1,133 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-image: url('pic1.jpg');
+}
+
+hr {
+    opacity: 0.5;
+    width: 70%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-right: 200px;
+}
+
+#task {
+    width: 300px;
+    height: 30px;
+}
+
+#date {
+    height: 30px;
+    padding: 0px 10px;
+    width: 130px;
+    margin-left: 10px;
+}
+
+button {
+    height: 33px;
+    width: 80px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 16px;
+    background-color: rgb(15, 206, 232);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(1.1);
+}
+.grid-h2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.grid-h2 h2{
+    margin-left: 100px;
+}
+.tasks-h2{
+    color: black;
+    background-color: #ccc;
+    width: 30%;
+    height: 36px;
+    padding-top: 10px;
+}
+#tasks {
+    padding: 10px;
+    margin: 0px auto; 
+    max-width: 800px; 
+}
+#completed-tasks{
+    padding: 10px;
+    margin: 0px auto; 
+    max-width: 600px;
+}
+.task-item{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.completed-task-item{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: rgb(163, 221, 163);
+    column-gap: 10px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#tasks button,#completed-tasks button {
+    background-color: red;
+    margin-top: 8px;
+    margin-left: 50px;
+}
+
+.task-item:hover {
+    background-color: #e7e5e5;
+}
+.grid-tsk-compleetdTask{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px; 
+    }
+
+    .task-item {
+        grid-template-columns: 1fr; 
+    }
+    h2{
+        width: 100%;
+    }
+    #task, #date {
+        width: 50%;
+        margin-bottom: 10px; 
+    }
+
+    button {
+        width: 50%;
+    }
+    .tasks-h2{
+        height: 60px;
+    }
+    .grid-tsk-compleetdTask{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}

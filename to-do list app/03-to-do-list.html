@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="03-to-do-list.css">
+</head>
+<body>
+    <div class="container-1">
+        <h1>To-Do List</h1>
+        <hr>
+        <h2>Add a Task</h2>
+        <input type="text" placeholder="Enter a task" id="task">
+        <input type="time" name="date" id="date">
+        <button onclick="addtask()">Submit</button>
+    </div>
+    <hr>
+    <div class="grid-h2">
+        <h2 class="tasks-h2">Pending Tasks</h2>
+         <h2>Completed Tasks</h2>
+    </div>
+    <div class="grid-tsk-compleetdTask">
+        <div id="tasks"></div> 
+        <div id="completed-tasks"></div> 
+    </div>
+    <script src="03-to-do-list.js"></script>
+    
+</body>
+</html>

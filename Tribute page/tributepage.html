@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratan Tata</title>
+    <style>
+        body {
+            font-family: "poppins",Arial, sans-serif;
+            background: linear-gradient(to right,rgb(197, 8, 204),rgb(234, 154, 7));
+            color: #333;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        hr{
+            opacity: 0.6;
+            margin: 20px;
+        }
+        
+        header {
+            background: linear-gradient(to right,rgb(197, 8, 204),rgb(234, 154, 7));
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        img{
+            margin: 5% 25% 3% 33%;
+            height: 470px;
+            border-radius: 10px;
+            transition: transform 0.2s ease-in-out;
+        }
+        img:hover{
+            transform: scale(1.1);  
+        }
+        .grid-img-bio,.grid-values-achie{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        
+        h2 {
+            color: #ffffff;
+        }
+        main{
+            background: linear-gradient(to right,rgb(197, 8, 204),rgb(234, 154, 7));
+        }
+        .Biography{
+            margin-top: 60px;
+            margin-left: 80px;
+        }
+        .Biography h2,.values h2,.achievements h2{
+            font-size: 2rem;
+            margin-left: 20%;
+            color: #ffffff;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .Biography p,.values p,.achievements li,.quote{
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #ffffff;
+            transition: transform 0.2s ease-in-out;
+
+        }
+        .achievements li:hover,.values p:hover{
+            transform: scale(1.1);
+        }
+        .values,.achievements{
+            margin-left: 80px;
+            margin-top: 30px;
+        }
+        .quote{
+            border: 1px solid #ffffff;
+            margin: 60px 400px 30px 400px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .grid-img-bio, .grid-values-achie {
+                grid-template-columns: 1fr; 
+            }
+            h1 {
+                font-size: 2em; 
+            }
+            .Biography, .values, .achievements, .quote {
+                margin: 20px 5%; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tribute To Sir Ratan Tata</h1>
+        <p>A visionary leader and philanthropist</p>    
+    </header>
+    <hr>
+    <section class="grid-img-bio">
+        <section class="Biography">
+        <h2>BIOGRAPHY</h2>
+        <p>Ratan Tata, born on December 28, 1937, in Mumbai, India, is a prominent businessman and philanthropist best known for leading the Tata Group, one of India's largest companies. He studied at Cornell University and Harvard Business School before joining the family business in 1962. As chairman from 1990 to 2012, Tata expanded the company globally, acquiring well-known brands like Jaguar Land Rover. He is also recognized for his dedication to social causes, supporting education, healthcare, and rural development through the Tata Trusts. Ratan Tata's leadership and commitment to making a positive impact have made him a respected figure in India and beyond.
+        </p>
+        </section>
+        <img src="ratantata-1.jpg" alt="ratantata">
+    </section>
+    <main>
+        <section class="grid-values-achie">
+            <section class="achievements">
+                <h2>ACHIEVEMENTS</h2>
+                <ul>
+                    <li>Transformed Tata Group into a global conglomerate.</li>
+                    <li>Launched the Tata Nano, the world's most affordable car.</li>
+                    <li>Promoted sustainable development and corporate social responsibility.</li>
+                    <li>Received numerous awards, including the Padma Bhushan and Padma Vibhushan.</li>
+                </ul>
+            </section>
+            <section class="values">
+                <h2>CORE VALUES</h2>
+                <p>Ratan Tata believes in integrity, excellence, and social responsibility. His leadership style emphasizes the importance of ethical business practices and giving back to society.</p>
+            </section>
+        </section>
+        <section class="quote">
+            <p>"The biggest risk is not taking any risk..."   ~ Ratan Tata</p>
+        </section>
+    </main>
+    <footer>
+        <p>Created with love and admiration for Ratan Tata</p>
+    </footer>
+</body>
+</html>
