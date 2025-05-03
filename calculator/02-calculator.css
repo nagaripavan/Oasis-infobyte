@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+.calculator-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
+    border: 1px #ffffff;
+    margin-left: 500px ;
+    margin-right: 500px;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgb(209, 189, 42);
+    width: 400px;
+}
+h1{
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+#display{
+    margin-bottom: 5px;
+    border: none;
+    color: #ffffff;
+    height: 40px;
+    width: 300px;
+    font-size:16px;
+    opacity: 0.6;
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+.output {
+    position: relative;
+    left:190px;
+    bottom: 50px;
+    width: 30%;
+    height: 40px;
+    font-size: 24px;
+    text-align: right;
+    margin-left: 10px;
+    color: #ffffff;
+}
+.button-container{
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 15px;
+}
+button{
+    background-color: #333;
+    padding: 20px;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 70px;
+}
+button:hover{
+    background-color: rgb(150, 143, 143);
+}
+#equal{
+    height: 62px;
+    width: 90px;
+}
+.functions{
+    background-color: rgb(88, 86, 86);
+    margin-bottom: 16px;
+    width:100px
+}
+.operators{
+    background-color: orange;
+    color: black;
+}
+.operators:hover{
+    background-color: rgb(232, 178, 80);
+}
